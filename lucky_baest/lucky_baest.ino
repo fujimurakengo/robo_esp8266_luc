@@ -36,7 +36,7 @@ char freez[]={"awawawa'wawa wa wa wa wa wa wa "};//フリーズした時
 
 ///////////////////自己紹介だよ
 void loop() {
-  while(tuch==0){}
+  while( tuch() == 0){}
   char jikosyoukai[6]={"hajime,ma'_shite","bo'kuwa,/rakki-bi'-_suto,dayo.","kimiwa,/kokoni,/ki'ta.","<NUMK VAL=" + String(ningen) + " COUNTER=ninnme> ","no,/fure'nnzu,dayo.","kimiwa,/na'niga,/shirita'i?"};
   for(int i=0;i<6;i++){
     speak(jikosyoukai[i]);
