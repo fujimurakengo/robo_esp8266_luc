@@ -33,3 +33,11 @@ if(t!=0){
      while(digitalRead(6)==LOW){};
      digitalWrite(7,LOW);
  } 
+
+
+ void onsitudo(){
+  get_temper();
+char onsitydo[]={"i'mano,/o'nndoto,/_shitsu'dowa.","_shitsu'dowa.","<NUMK VAL=" + String(h) + " COUNTER=pa-> ","_shitsuo'nnwa","<NUMK VAL=" + String(t) + " COUNTER=do>","dayo?"};
+ }
+ }
+

@@ -20,16 +20,24 @@ void setup(){
 //////////////////////////////////////////////////////////////////////////////////////////
 
 float h,t =0; 
+int ningen=0;
 int times_dalays=100; 
-char jikosyoukai[]={"hajime,ma'_shite","bo'kuwa,/rakki-bi'-_suto,dayo.","kimiwa,/kokoni,/ki'ta.","<NUMK VAL=" + String(h) + " COUNTER=ninnme> ","no,/fure'nnzu,dayo.","kimiwa,/na'niga,/shirita'i?"};//6
-char annnai[]={"kimiwa,/na'niga,/shirita'i?","o'nndo,to,/_shitsu'do?","pimu,ni,tsu'ite?","i'mano,/jikann,ga,/shirita'i?"};//4
-char orei[]={"waka'ttayo.","pimu,no,moyoo'shio","yukkuritanoshi'nndene?"}
-char freez[]={"awawawa'wawa wa wa wa wa wa wa "}
+//6
+char annnai[5][30]={"kimiwa,/na'niga,/shirita'i?","o'nndo,to,/_shitsu'do?","pimu,ni,tsu'ite?","i'mano,/jikann,ga,/shirita'i?","soreto'mo bo'kuno+koto'?"};//5質問
+char orei[3][30]={"waka'ttayo.","pimu,no,moyoo'shio","yukkuritanoshi'nndene?"};//無視された時
+char boss_no_koto[9][30]={"bo'kuwa,/kabannchannni,_tsukura'reta.","pi'muno,/bu-su,nabige-to',robodayo.","maikonn'wa i-esu'pi-wa/chini-roku'ro_ku.","to-saisareta,se'nnsa-wa.","onn_shitsu'do se'nnsa-.","seidennyo-ryo-'_shiki/taxtu_chise'nnsa.","soreni/kuwaete,onnseigo-se-a'ishi-o/tsunnderuyo.","bo'_ku sugo'idesho?","kabannga,gittoni,bo'kuno/so-_suko'-doo,agetekureteruyo."};               
+//ラッキービースト自身の自己紹介および解説
+
+//  部屋の温度と湿度
+
+
+char freez[]={"awawawa'wawa wa wa wa wa wa wa "};//フリーズした時
 //////////////////////////////
 
 ///////////////////自己紹介だよ
 void loop() {
   while(tuch==0){}
+  char jikosyoukai[6]={"hajime,ma'_shite","bo'kuwa,/rakki-bi'-_suto,dayo.","kimiwa,/kokoni,/ki'ta.","<NUMK VAL=" + String(ningen) + " COUNTER=ninnme> ","no,/fure'nnzu,dayo.","kimiwa,/na'niga,/shirita'i?"};
   for(int i=0;i<6;i++){
     speak(jikosyoukai[i]);
  }///////////////////自己紹介だよ
@@ -55,7 +63,7 @@ void loop() {
     }
   }/////////////////////////////////////////////////////////////////////////////////////////無視された時の対応
  
- t =   get_temper();
+ get_temper();
     
 } 
 
