@@ -1,7 +1,7 @@
 
 
 
-int tuch() { 
+int tuch(){ 
   times = 0; 
 
   // パルスの立ち上げ 
