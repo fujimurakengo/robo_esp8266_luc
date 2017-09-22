@@ -49,5 +49,5 @@ while(t==0){
     }
     
   }
-  retuen t;
+//  retruen t;
 }
