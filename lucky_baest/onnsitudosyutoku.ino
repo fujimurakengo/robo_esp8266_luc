@@ -1,6 +1,6 @@
 float get_temper(){
 while(t==0){
-  printf(Wire.endTransmission(true));// 
+  //printf(Wire.endTransmission(true));// 
   Wire.beginTransmission(0x5c); // address(0x5c) sensor(AM2320) 
   delay(times_dalays); 
   Wire.write(0x03); //Arduino read senser 
