@@ -15,8 +15,8 @@ int tuch(){
   delay(1); 
 
   // ローパスフィルタ 
-  //t = 0.8 * prevt + 0.2 * t; 
-  //prevt = t; 
+  t = 0.8 * prevt + 0.2 * t; 
+  prevt = t; 
 
   // LED点灯 
   if( times > threshold ){ 
